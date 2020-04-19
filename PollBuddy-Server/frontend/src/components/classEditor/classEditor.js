@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './classEditor.scss'
 import {MDBBtn, MDBContainer, MDBInput} from "mdbreact";
+import QuestionEditor from "../questionEditor/questionEditor";
 
 //this component has 2 modes, edit and new. The new version allows the user to create a new class while the edit version
 //allows the user to edit an existing class. Pass new=true into props if you want to use the new version of the component
@@ -115,6 +116,7 @@ export default class ClassEditor extends Component {
                                 value={this.props.new ? null: this.state.name}
                                 onInput={this.onInput} />
                         </MDBContainer>
+                        <QuestionEditor/>{/*temp just to see what it looks like embedded in another component*/}
                         <button className="submit-button" onClick={this.onSubmit}>
                             {this.props.new ? "Create Class": "Save Changes"}
                         </button>

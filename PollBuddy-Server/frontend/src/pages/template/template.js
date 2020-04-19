@@ -6,6 +6,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import new_logo from '../../Poll_Buddy_Logo.png';
 import './template.scss'
 import ClassEditor from "../../components/classEditor/classEditor";
+import QuestionEditor from "../../components/questionEditor/questionEditor";
 
 export default class Template extends Component {//this class is an example of how to use get requests so frontend team can eventually connect to backend refer to class creation for post requests
     constructor() {

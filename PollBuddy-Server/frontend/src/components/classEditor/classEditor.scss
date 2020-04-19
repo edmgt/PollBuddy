@@ -1,7 +1,6 @@
 .editor-box {
   position: relative;
-  //top: 20vh;
-  height: 40vh;
+  height: fit-content;
   width: 50vw;
   border-radius: 4vh;
   background: #4d3658;
@@ -9,12 +8,15 @@
   -41px -41px 82px #593e65;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  //align-items: start;
   justify-content: center;
   margin: 50px;
 }
 
 .field-label{
+  align-items: start;
+  padding-left: 60px;
+  padding-top: 32px;
   text-align: left;
   color: white;
   font-size: large;
@@ -30,7 +32,15 @@ input[type=text], select {
   box-sizing: border-box;
   font-family: 'Fredoka One', cursive;
   color: #25162c;
+  width: 100% !important;
 }
+
+.form-group{
+  position: relative;
+  padding-left: 60px;
+  width: 70%;
+}
+
 
 input[type=submit] {
   width: 40%;
@@ -49,9 +59,11 @@ input[type=submit]:hover {
   background-color: #dfcfea;
 }
 
-.submit-button {
+.submit-button {//I want to move this to the right but idk how to do that
+  width: 50%;
   position: absolute;
-  right: 2vh;
+  left: 2vh;
+  //right: 2vh;
   bottom: 2vh;
   justify-content: center;
   text-align: center;
