@@ -1,13 +1,7 @@
-<<<<<<< HEAD
 import React, { Component } from 'react';
 import './classEditor.scss'
 import {MDBBtn, MDBContainer, MDBInput} from "mdbreact";
 import QuestionEditor from "../questionEditor/questionEditor";
-=======
-import React, { Component } from "react";
-// import './classEditor.scss'
-import { MDBContainer } from "mdbreact";
->>>>>>> master
 
 //this component has 2 modes, edit and new. The new version allows the user to create a new class while the edit version
 //allows the user to edit an existing class. Pass new=true into props if you want to use the new version of the component
@@ -106,7 +100,6 @@ export default class ClassEditor extends Component {
     }
     
     render() {
-<<<<<<< HEAD
         if(this.state === null){
             return (
                 <div class="loader"></div>
@@ -131,32 +124,5 @@ export default class ClassEditor extends Component {
                     </MDBContainer>
             )
         }
-=======
-      if(this.state === null){
-        //show nothing (or loading wheel) if the data has not come in yet
-        return null;//loading todo ui
-      }else{
-        return (
-          <MDBContainer fluid className="box">
-            <p className="bold fontSizeLarge">
-                        Class Name:
-            </p>
-
-            <MDBContainer className="form-group">
-              <input
-                name="name"
-                id="className"
-                className="form-control textBox"
-                value={this.props.new ? null: this.state.name}
-                onInput={this.onInput} />
-            </MDBContainer>
-
-            <button className="btn button" onClick={this.onSubmit}>
-              {this.props.new ? "Create Class": "Save Changes"}
-            </button>
-          </MDBContainer>
-        )
-      }
->>>>>>> master
     }
 }
