@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import './classEditor.scss'
+import React, { Component } from "react";
+import "./classEditor.scss"
 import {MDBBtn, MDBContainer, MDBInput} from "mdbreact";
 import QuestionEditor from "../questionEditor/questionEditor";
 
@@ -106,8 +106,8 @@ export default class ClassEditor extends Component {
 			)
         }else{
             return (
-                    <MDBContainer fluid className="editor-box">
-                        <label className="field-label">Class Name:</label>
+                <MDBContainer fluid className="editor-box">
+                    <label className="field-label">Class Name:</label>
                         <MDBContainer className="form-group">
                             <input
                                 type="text"
