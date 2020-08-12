@@ -35,29 +35,27 @@
   color: var(--white-most-text);
 }
 
-/* Style The Dropdown Button */
-.dropbtn {
-  // background-color: #4CAF50;
-  font: 16px / 18px 'Fredoka One';
-  color: white;
-  padding: 16px;
-  // font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
   position: absolute;
   right: 0;
   font: 16px / 18px 'Fredoka One';
-  padding: 12px 20px;
-  background: var(--base-purple-logo-bg);
-  margin: -5px 40px 0 0;
+  padding: 0px 20px;
+  margin: -10px 0 0 40px;
   text-transform: uppercase;
-  border-radius: 999px;
   transition: all 0.2s linear;
   display: inline-block;
+}
+
+/* Style The Dropdown Button */
+.dropbtn {
+  background: var(--base-purple-logo-bg);
+  border-radius: 999px;
+  font: 16px / 18px 'Fredoka One';
+  color: white;
+  padding: 16px;
+  border: none;
+  cursor: pointer;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -65,9 +63,11 @@
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 160px;
+  min-width: 70px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  right: 0;
+  left: 0;
 }
 
 /* Links inside the dropdown */

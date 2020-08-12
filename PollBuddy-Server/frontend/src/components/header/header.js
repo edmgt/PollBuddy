@@ -36,7 +36,7 @@ export default class Header extends Component {
           {this.state.text}out
         </a> */}
         <div class="dropdown">
-          <button class="dropbtn">Dropdown</button>
+          <button class="dropbtn">Pages</button>
           <div class="dropdown-content">
             <a href="/about">About</a>
             <a href="/privacy">Privacy</a>
