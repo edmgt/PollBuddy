@@ -32,9 +32,17 @@ export default class Header extends Component {
           <img src = {logo} className = "header_bar_logo" alt = "logo" />
         </a>
         {this.props.title}
-        <a href = {this.state.link} className = "header_bar_btn">
-          {this.state.text}
-        </a>
+        {/* <a href = {this.state.link} className = "header_bar_btn">
+          {this.state.text}out
+        </a> */}
+        <div class="dropdown">
+          <button class="dropbtn">Dropdown</button>
+          <div class="dropdown-content">
+            <a href="/about">About</a>
+            <a href="/privacy">Privacy</a>
+            <a href="/faq">FAQ</a>
+          </div>
+        </div>
       </header>
     );
   }
