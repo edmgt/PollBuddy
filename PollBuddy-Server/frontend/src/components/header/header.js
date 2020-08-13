@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "mdbreact/dist/css/mdb.css";
 import "./header.scss";
 import logo from "../../images/logo.png";
+import hamburger from "../../images/dropdown-icon.svg"; // Dropdown-menu icon
 
 export default class Header extends Component {
   constructor(props) {
@@ -36,7 +37,9 @@ export default class Header extends Component {
           {this.state.text}out
         </a> */}
         <div class="dropdown">
-          <button class="dropbtn">Pages</button>
+          <button class="dropbtn">
+            <img src={hamburger} className = "dropdown-icon"/>
+          </button>
           <div class="dropdown-content">
             <a href="/about">About</a>
             <a href="/privacy">Privacy</a>
