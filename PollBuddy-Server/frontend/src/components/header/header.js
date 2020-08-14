@@ -52,12 +52,6 @@ export default class Header extends Component {
     document.getElementById("headerDropdown").classList.toggle("show");
   }
 
-      // // When the user clicks on the button, toggle between hiding and showing the dropdown content
-      // function myFunction() {
-      //   document.getElementById("headerDropdown").classList.toggle("show");
-      // }
-
-
   render() {
     return (
       <header className = "header_bar">
@@ -73,6 +67,7 @@ export default class Header extends Component {
             <img src={hamburger} className = "dropdown-icon"/>
           </button>
           <div id="headerDropdown" class="dropdown-content">
+            <a href={this.state.link}>{this.state.text}</a>
             <a href="/about">About</a>
             <a href="/privacy">Privacy</a>
             <a href="/faq">FAQ</a>
