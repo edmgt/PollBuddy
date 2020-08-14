@@ -25,7 +25,39 @@ export default class Header extends Component {
         text: "account"
       };
     }
+
+
+    this.handleClick = this.handleClick.bind(this);
+
+
+
+  //   // Close the dropdown menu if the user clicks outside of it
+  //   window.onclick = function(event) {
+  //     if (!event.target.matches('.dropbtn')) {
+  //       var dropdowns = document.getElementsByClassName("dropdown-content");
+  //       var i;
+  //       for (i = 0; i < dropdowns.length; i++) {
+  //         var openDropdown = dropdowns[i];
+  //         if (openDropdown.classList.contains('show')) {
+  //           openDropdown.classList.remove('show');
+  //         }
+  //       }
+  //     }
+  //   }
+
   }
+
+  handleClick() {
+    console.log('click happened');
+    document.getElementById("headerDropdown").classList.toggle("show");
+  }
+
+      // // When the user clicks on the button, toggle between hiding and showing the dropdown content
+      // function myFunction() {
+      //   document.getElementById("headerDropdown").classList.toggle("show");
+      // }
+
+
   render() {
     return (
       <header className = "header_bar">
@@ -37,10 +69,10 @@ export default class Header extends Component {
           {this.state.text}out
         </a> */}
         <div class="dropdown">
-          <button class="dropbtn">
+          <button onClick={this.handleClick} class="dropbtn">
             <img src={hamburger} className = "dropdown-icon"/>
           </button>
-          <div class="dropdown-content">
+          <div id="headerDropdown" class="dropdown-content">
             <a href="/about">About</a>
             <a href="/privacy">Privacy</a>
             <a href="/faq">FAQ</a>
